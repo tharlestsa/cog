@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Cloud Optimized GeoTIFF (COG)</title>
+    <!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
+    <!-- <script src="https://unpkg.com/elm-pep@1.0.6/dist/elm-pep.js"></script> -->
+    <!-- The lines below are only needed for old environments like Internet Explorer and Android 4.x -->
+    <!-- <script src="https://cdn.polyfill.io/v3/polyfill.min.js?features=fetch,requestAnimationFrame,Element.prototype.classList,TextDecoder"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/3.18.3/minified.js"></script> -->
+    <style>
+      .map {
+        margin: auto;
+        width: 98%;
+        height: calc(98vh);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+        border-radius: 1.25rem;
+      }
+      .map > canvas, .map > .ol-viewport{
+        border-radius: 1.25rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
